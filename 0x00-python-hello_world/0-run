@@ -1,16 +1,2 @@
 #!/bin/bash
-
-# Check if $PYFILE is set
-if [ -z "$PYFILE" ]; then
-  echo "PYFILE env var not set"
-  exit 1
-fi
-
-# Check if Python script exists
-if [ ! -f "$PYFILE" ]; then
-  echo "Python script $PYFILE does not exist"
-  exit 1
-fi
-
-# Run Python script
-python3 "$PYFILE"
+python3 $PYFILE
